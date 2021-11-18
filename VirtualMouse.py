@@ -1,7 +1,7 @@
 import time
 
 import cv2
-import HandTrackingModule as htm
+import pyHandTrackingModule as htm
 import numpy as np
 
 import autopy
