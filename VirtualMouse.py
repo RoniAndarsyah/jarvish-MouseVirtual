@@ -101,6 +101,7 @@ while True:
             # menemkan jarak antar jari tengan dan jari manis
             lenght = math.hypot(x3-x4, y3-y4)
             # print(lenght)
+            # paning
             # click kanan
             if lenght < 30:
                 cv2.circle(img, (x4, y4), 15, (0, 0, 255), cv2.FILLED)
