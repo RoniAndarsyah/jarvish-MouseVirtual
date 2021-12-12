@@ -2,11 +2,12 @@ import time
 from cvzone.HandTrackingModule import HandDetector
 import cv2
 import pyautogui
+import mouse
 import numpy as np
-
+import math
 
 wCam, hCam = 640, 480
-frameR = 100
+frameR = 80
 smoothing = 2
 
 pTime = 0
@@ -16,13 +17,22 @@ clocX, clocY = 0, 0
 cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
 cap.set(4, hCam)
-detector = HandDetector(detectionCon=0.8, maxHands=3)
+detector = HandDetector(detectionCon=0.5, maxHands=2)
 wScr, hScr = pyautogui.size()
 print(hScr, wScr)
 
 while True:
     # 1. gambar dan menemukan hand landmark
     seccess, img = cap.read()
+    # start = time.time()
+    # sum = 0
+    # N = 100
+    # for i in range(0, N):
+    #     for j in range(0, N):
+    #         sum += 1
+    # end = time.time()
+    # second = end - start
+    # fps = smoothing / second
     Hands, img = detector.findHands(img, flipType=False)
     # cek function hand lancmark
     # if len(Hands):
@@ -52,6 +62,7 @@ while True:
     if len(Hands):
         hand1 = Hands[0]
         lmList = hand1["lmList"]
+        x0, y0 = lmList[4][0], lmList[4][1]
         x1, y1 = lmList[8][0], lmList[8][1]
         x2, y2 = lmList[4][0], lmList[4][1]
         x3, y3 = lmList[12][0], lmList[12][1]
@@ -73,31 +84,54 @@ while True:
             clocY = plocY + (y5 - plocY) / smoothing
 
             # 7. Move mouse
-            pyautogui.moveTo(wScr - clocX, clocY)
+            mouse.move(wScr - clocX, clocY)
+
             cv2.circle(img, (x3, y3), 15, (255, 0, 0), cv2.FILLED)
             plocX, plocY = clocX, clocY
-         # 8. menjalankan function : Click Mode
-        if fingers[0] == 1 and fingers[1] == 0:
-            # 9. menemukan jarak antara jari
-            lenght, info, img = detector.findDistance(
-                (x1, y2), (x2, y2), img)
-            print(lenght)
-            # jika jarak antar telunjuk dan jempol menekuk : clock mode
-            pyautogui.click()
-
+    # 8. menjalankan function : Click Mode
+        lenght = math.hypot(x0 - x1, y0 - y1)
+        # print(lenght)
+        # 9. menemukan jarak antara jari
+        if lenght < 30:
+            # jika jarak antar telunjuk dan jempol menekuk : clock kiri
+            cv2.circle(img, (x2, y2), 15, (0, 255, 0), cv2.FILLED)
+            mouse.click()
          # jika jari tengan dan jari manis berdekatan maka : right click mode
         if fingers[2] == 1 and fingers[3] == 1:
             # menemkan jarak antar jari tengan dan jari manis
-            lenght, info, img = detector.findDistance((x4, y4), (x3, y3), img)
-            print(lenght)
+            lenght = math.hypot(x3-x4, y3-y4)
+            # print(lenght)
             # click kanan
             if lenght < 30:
+                cv2.circle(img, (x4, y4), 15, (0, 0, 255), cv2.FILLED)
                 pyautogui.click(button='right')
 
-    # 11. frame Rate
+            if len(Hands) == 2:
+                hand2 = Hands[1]
+                tengah = hand2["lmList"]
+                xx2, yy2 = tengah[12][0], tengah[12][1]
+                lenght, info, img = detector.findDistance(
+                    (xx2, yy2), (x3, y3), img)
+                if lenght != 0:
+                    scale = int((lenght - xx2) // 2)
+                    print(scale)
+                    pyautogui.scroll(scale)
+
+            # 11. frame Rate
     cTime = time.time()
     fps = 1/(cTime-pTime)
     pTime = cTime
+    # fps = cap.get(cv2.CAP_PROP_FPS)
+    # num_frames = 1
+    # print("capturing {0} frmes".format(num_frames))
+    # start_time = time.time()
+    # sum = 0
+    # for i in range(0, frameR):
+    #     for j in range(0, frameR):
+    #         sum += 1
+    # end_time = time.time()
+    # second = end_time - start_time
+    # fps = num_frames / second
     cv2.putText(img, str(int(fps)), (20, 50),
                 cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3)
 
