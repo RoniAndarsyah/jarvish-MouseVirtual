@@ -101,7 +101,6 @@ while True:
             # menemkan jarak antar jari tengan dan jari manis
             lenght = math.hypot(x3-x4, y3-y4)
             # print(lenght)
-            # paning
             # click kanan
             if lenght < 30:
                 cv2.circle(img, (x4, y4), 15, (0, 0, 255), cv2.FILLED)
@@ -122,17 +121,6 @@ while True:
     cTime = time.time()
     fps = 1/(cTime-pTime)
     pTime = cTime
-    # fps = cap.get(cv2.CAP_PROP_FPS)
-    # num_frames = 1
-    # print("capturing {0} frmes".format(num_frames))
-    # start_time = time.time()
-    # sum = 0
-    # for i in range(0, frameR):
-    #     for j in range(0, frameR):
-    #         sum += 1
-    # end_time = time.time()
-    # second = end_time - start_time
-    # fps = num_frames / second
     cv2.putText(img, str(int(fps)), (20, 50),
                 cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3)
 
