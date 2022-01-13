@@ -1,14 +1,14 @@
+import math
 import time
-from cvzone.HandTrackingModule import HandDetector
 import cv2
-import pyautogui
 import mouse
 import numpy as np
-import math
+import pyautogui
+from cvzone.HandTrackingModule import HandDetector
 
 wCam, hCam = 640, 480
-frameR = 80
-smoothing = 2
+frameR = 90
+smoothing = 4
 
 pTime = 0
 plocX, plocY = 0, 0
@@ -61,6 +61,7 @@ while True:
     # 2. dapatkan ttitk dari dari jari telunjuk dan jempol
     if len(Hands):
         hand1 = Hands[0]
+        fingers = detector.fingersUp(hand1)
         lmList = hand1["lmList"]
         x0, y0 = lmList[4][0], lmList[4][1]
         x1, y1 = lmList[8][0], lmList[8][1]
@@ -69,8 +70,7 @@ while True:
         x4, y4 = lmList[16][0], lmList[16][1]
         # print(x1, y1, x2, y2)
         # 3. cek apakah jari mengangkat
-        fingers = detector.fingersUp(hand1)
-        # print(fingers[0])
+        print(fingers)
         # 4. semua jari terangkat : Moving Mode
         if fingers[3] == 0 and fingers[4] == 0:
             # 5. convert coordinate
@@ -92,10 +92,11 @@ while True:
         lenght = math.hypot(x0 - x1, y0 - y1)
         # print(lenght)
         # 9. menemukan jarak antara jari
-        if lenght < 30:
+        if lenght < 20:
             # jika jarak antar telunjuk dan jempol menekuk : clock kiri
             cv2.circle(img, (x2, y2), 15, (0, 255, 0), cv2.FILLED)
             mouse.click()
+            # print(lenght)
          # jika jari tengan dan jari manis berdekatan maka : right click mode
         if fingers[2] == 1 and fingers[3] == 1:
             # menemkan jarak antar jari tengan dan jari manis
@@ -104,7 +105,8 @@ while True:
             # click kanan
             if lenght < 30:
                 cv2.circle(img, (x4, y4), 15, (0, 0, 255), cv2.FILLED)
-                pyautogui.click(button='right')
+                mouse.right_click()
+                print(lenght)
 
             if len(Hands) == 2:
                 hand2 = Hands[1]
