@@ -6,6 +6,7 @@ import numpy as np
 import pyautogui
 from cvzone.HandTrackingModule import HandDetector
 
+# set cam
 wCam, hCam = 640, 480
 frameR = 90
 smoothing = 4
