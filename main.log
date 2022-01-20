@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.13)  19 JAN 2022 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.13)  20 JAN 2022 15:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/user/OneDrive/Dokumen/POLTEKPOS/KELAS 2C/PROJECT 2/VM/Project-VirtualMouse/BookTutorial/main.tex"
-(c:/Users/user/OneDrive/Dokumen/POLTEKPOS/KELAS 2C/PROJECT 2/VM/Project-VirtualMouse/BookTutorial/main.tex
+**"c:/Users/user/OneDrive/Dokumen/POLTEKPOS/KELAS 2C/PROJECT 2/VM/Project-VirtualMouse/main.tex"
+(c:/Users/user/OneDrive/Dokumen/POLTEKPOS/KELAS 2C/PROJECT 2/VM/Project-VirtualMouse/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2021-11-22> (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -334,7 +334,7 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (main.aux
 
-LaTeX Warning: Label `fig:OrganizationStructure' multiply defined.
+LaTeX Warning: Label `fig:MechineLearning' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -466,7 +466,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 31.
-<sampul/sampul-luar.png, id=130, 421.0932pt x 597.432pt>
+<sampul/sampul-luar.png, id=110, 421.0932pt x 597.432pt>
 File: sampul/sampul-luar.png Graphic file (type png)
 <use sampul/sampul-luar.png>
 Package pdftex.def Info: sampul/sampul-luar.png  used on input line 53.
@@ -510,7 +510,7 @@ Package pdftex.def Info: sampul/sampul-luar.png  used on input line 53.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<sampul/sampul-dalam.png, id=144, 421.0932pt x 597.432pt>
+<sampul/sampul-dalam.png, id=124, 421.0932pt x 597.432pt>
 File: sampul/sampul-dalam.png Graphic file (type png)
 <use sampul/sampul-dalam.png>
 Package pdftex.def Info: sampul/sampul-dalam.png  used on input line 59.
@@ -522,10 +522,7 @@ Package pdftex.def Info: sampul/sampul-dalam.png  used on input line 59.
 
 ] (lainnya/kata-pengantar.tex) [5] [6
 
-] (main.toc
-Underfull \vbox (badness 1466) has occurred while \output is active []
-
- [7
+] (main.toc [7
 
 ])
 \tf@toc=\write4
@@ -533,7 +530,7 @@ Underfull \vbox (badness 1466) has occurred while \output is active []
 
  [8] (main.lof
 
-Package natbib Warning: Citation `DiscoverySpaceShuttle' on page ix undefined on input line 7.
+Package natbib Warning: Citation `DiscoverySpaceShuttle' on page ix undefined on input line 8.
 
 )
 \tf@lof=\write5
@@ -554,7 +551,7 @@ Package natbib Warning: Citation `DiscoverySpaceShuttle' on page ix undefined on
 
 ] (bab/1-BAB_1.tex
 Bab 1.
-<gambar/metode_ML.png, id=232, 296.60812pt x 258.46562pt>
+<gambar/metode_ML.png, id=209, 296.60812pt x 258.46562pt>
 File: gambar/metode_ML.png Graphic file (type png)
 <use gambar/metode_ML.png>
 Package pdftex.def Info: gambar/metode_ML.png  used on input line 18.
@@ -567,13 +564,19 @@ Underfull \vbox (badness 6675) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./gambar/metode_ML.png>]
+ [2 <./gambar/metode_ML.png>] [3]
+<gambar/neuron.jpg, id=234, 228.855pt x 169.38281pt>
+File: gambar/neuron.jpg Graphic file (type jpg)
+<use gambar/neuron.jpg>
+Package pdftex.def Info: gambar/neuron.jpg  used on input line 66.
+(pdftex.def)             Requested size: 205.96759pt x 152.4431pt.
+ [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
+ [5 <./gambar/neuron.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]) [5] [6
+ [6]) [7] [8
 
 ] (bab/2-BAB_2.tex
 Bab 2.
@@ -585,28 +588,28 @@ Package pdftex.def Info: gambar/organization-structure.png  used on input line 4
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7
+ [9
 
-] [8 <./gambar/organization-structure.png>] (bab/3-tinjauan-pustaka.tex
+] [10 <./gambar/organization-structure.png>] (bab/3-tinjauan-pustaka.tex
 Bab 3.
-<gambar/space-shuttle.jpg, id=302, 642.4pt x 513.92pt>
+<gambar/space-shuttle.jpg, id=301, 642.4pt x 513.92pt>
 File: gambar/space-shuttle.jpg Graphic file (type jpg)
 <use gambar/space-shuttle.jpg>
 Package pdftex.def Info: gambar/space-shuttle.jpg  used on input line 11.
 (pdftex.def)             Requested size: 192.72148pt x 154.17719pt.
 
-Package natbib Warning: Citation `DiscoverySpaceShuttle' on page 9 undefined on input line 13.
+Package natbib Warning: Citation `DiscoverySpaceShuttle' on page 11 undefined on input line 13.
 
 
-Package natbib Warning: Citation `Newton1687' on page 9 undefined on input line 30.
+Package natbib Warning: Citation `Newton1687' on page 11 undefined on input line 30.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+ [11
 
 
- <./gambar/space-shuttle.jpg>]) [10] (bab/4-desain-implementasi.tex
+ <./gambar/space-shuttle.jpg>]) [12] (bab/4-desain-implementasi.tex
 Bab 4.
 (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -622,21 +625,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 20.
  (C:\Users\user\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (program/prime-number.py [11
+) (program/prime-number.py [13
 
 
-])) [12] (bab/5-pengujian-evaluasi.tex
+])) [14] (bab/5-pengujian-evaluasi.tex
 Bab 5.
-(tabel/energi-kecepatan.tex)) [13
+(tabel/energi-kecepatan.tex)) [15
 
 
-] [14
+] [16
 
 ] (bab/6-kesimpulan-saran.tex
 Bab 6.
-) [15
+) [17
 
-] [16
+] [18
 
 ]
 No file main.bbl.
@@ -651,9 +654,9 @@ File: gambar/felix.jpg Graphic file (type jpg)
 <use gambar/felix.jpg>
 Package pdftex.def Info: gambar/felix.jpg  used on input line 25.
 (pdftex.def)             Requested size: 140.84258pt x 166.88696pt.
-) [17
+) [19
 
- <./gambar/elon.jpg> <./gambar/felix.jpg>] [18
+ <./gambar/elon.jpg> <./gambar/felix.jpg>] [20
 
 ]
 
@@ -663,21 +666,27 @@ Package natbib Warning: There were undefined citations.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A3EAE81002641FFB83F18DD005D551B2;4932.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: DD8E657633BAD308C06F60C31453E82B;4124
+(rerunfilecheck)             After:  917EF1AB63D2EE28053FB7DFB05F6122;4854.
  ) 
 Here is how much of TeX's memory you used:
- 14695 strings out of 478659
- 234621 string characters out of 2846394
- 877524 words of memory out of 3000000
- 32412 multiletter control sequences out of 15000+600000
+ 14709 strings out of 478659
+ 234419 string characters out of 2846394
+ 877663 words of memory out of 3000000
+ 32414 multiletter control sequences out of 15000+600000
  409786 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,77p,916b,2130s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (30 pages, 1022895 bytes).
+ 68i,12n,77p,903b,2130s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/user/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on main.pdf (32 pages, 1042998 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 292 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 464 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
