@@ -1,0 +1,40 @@
+% Ubah kalimat sesuai dengan judul dari bab ini
+\chapter{DESAIN DAN IMPLEMENTASI}
+
+% Ubah konten-konten berikut sesuai dengan yang ingin diisi pada bab ini
+
+\section{Deskripsi Sistem}
+
+Sistem akan dibuat dengan \lipsum[21][1-12]
+
+\section{Implementasi Alat}
+
+Alat diimplementasikan dengan \lipsum[22]
+
+% Contoh pembuatan code snippet
+\begin{lstlisting}[
+  language=C++,
+  label={lst:Hello World},
+  caption={Program hello world}
+]
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+\end{lstlisting}
+
+% Contoh penggunaan referensi dari code snippet yang diinputkan
+Seperti contoh pada baris program Listing \ref{lst:Hello World} dan Listing \ref{lst:PrimeNumber}, \lipsum[23]
+
+% Contoh input code snippet
+\lstinputlisting[
+  % Bahasa yang digunakan oleh code snippet
+  language=Python,
+  % Label referensi dari code snippet yang diinputkan
+  label={lst:PrimeNumber},
+  % Keterangan dari code snippet yang diinputkan
+  caption={Program perhitungan bilangan prima}
+% Nama dari file code snippet yang diinputkan
+]{program/prime-number.py}

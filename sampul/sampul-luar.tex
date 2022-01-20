@@ -1,0 +1,53 @@
+\AddToShipoutPictureBG*{
+  \AtPageLowerLeft{
+    % Ubah nilai berikut jika posisi horizontal background tidak sesuai
+    \hspace{-3.5mm}
+
+    % Ubah nilai berikut jika posisi vertikal background tidak sesuai
+    \raisebox{0mm}{
+      \includegraphics[width=\paperwidth,height=\paperheight]{sampul/sampul-luar.png}
+    }
+  }
+}
+
+% Menyembunyikan nomor halaman
+\thispagestyle{empty}
+
+% Pengaturan margin untuk menyesuaikan konten sampul
+\newgeometry{top=70mm,left=25mm,right=20mm,bottom=25mm}
+
+\begin{flushleft}
+
+  % Pengaturan jenis dan warna teks yang digunakan
+  \sffamily\color{white}
+  % Ubah kalimat berikut sesuai dengan judul topik kerja praktik
+  \begin{center}
+    \vspace{30ex}
+    \noindent{\large \textbf{VIRTUAL MOUSE USING HAND GESTURE PYTHON}}
+    \vspace{30ex}
+  \end{center}
+
+  \begin{adjustwidth}{-2mm}{}
+    \begin{tabular}{lcp{0.7\linewidth}}
+      % Ubah kalimat-kalimat berikut sesuai dengan nama dan NRP mahasiswa pertama
+      \textbf{Argya Rijal Rafi} & & \textbf{NPM 1204062} \\
+      % Ubah kalimat-kalimat berikut sesuai dengan nama dan NRP mahasiswa kedua
+      \textbf{Guna Darma} & & \textbf{NPM 1204062} \\
+    \end{tabular}
+  \end{adjustwidth}
+  \vspace{4ex}
+
+  \noindent\textbf{Dosen Pembimbing} \\
+  % Ubah kalimat berikut sesuai dengan nama dosen pembimbing
+  \textbf{Rolly Awangga, S.T., M.T.}
+  \vspace{10ex}
+
+  % Ubah kalimat berikut sesuai dengan nama fakultas
+  \textbf{Teknik Informatika} \\
+  \textbf{Politeknik Pos Indonesia} \\
+  % Ubah kalimat berikut sesuai dengan tempat dan tahun pembuatan buku
+  \textbf{Bandung 2021}
+
+\end{flushleft}
+
+\restoregeometry

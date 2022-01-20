@@ -1,0 +1,59 @@
+\AddToShipoutPictureBG*{
+  \AtPageLowerLeft{
+    % Ubah nilai berikut jika posisi horizontal background tidak sesuai
+    \hspace{-3.5mm}
+
+    % Ubah nilai berikut jika posisi vertikal background tidak sesuai
+    \raisebox{0mm}{
+      \includegraphics[width=\paperwidth,height=\paperheight]{sampul/sampul-dalam.png}
+    }
+  }
+}
+
+% Pengaturan margin untuk menyesuaikan konten sampul
+\newgeometry{top=70mm,left=25mm,right=20mm,bottom=25mm}
+
+\begin{flushleft}
+
+  % Pengaturan jenis teks yang digunakan
+  \sffamily
+
+  % Ubah penomoran buku berikut sesuai dengan yang ditentukan oleh departemen
+  \noindent\textbf{PROJECT 2 TEKNIK INFORMATIKA}
+  \vspace{4ex}
+
+  % Ubah kalimat berikut sesuai dengan nama perusahaan tempat kerja praktik
+  \noindent{\large \textbf{POLITEKNIK POS INDONESIA}} \\
+  % Ubah tanggal berikut sesuai dengan waktu berlangsungnya kerja praktik
+  \textbf{\today}
+  \vspace{6ex}
+
+  % Ubah kalimat berikut sesuai dengan judul topik kerja praktik
+  \noindent{\large \textbf{PEMBUATAN VIRTUAL MOUSE USING HAND GESTURE PYTHON}}
+  \vspace{6ex}
+
+  \begin{adjustwidth}{-2mm}{}
+    \begin{tabular}{lcp{0.7\linewidth}}
+      % Ubah kalimat-kalimat berikut sesuai dengan nama dan NRP mahasiswa pertama
+      \textbf{ARGYA RIJAL RAFI} & & \textbf{NPM 1204062} \\
+      % Ubah kalimat-kalimat berikut sesuai dengan nama dan NRP mahasiswa kedua
+      \textbf{GUNA DARMA} & & \textbf{NPM 1204071} \\
+    \end{tabular}
+  \end{adjustwidth}
+  \vspace{4ex}
+
+  \noindent
+  \textbf{Dosen Pembimbing} \\
+  % Ubah kalimat berikut sesuai dengan nama dosen pembimbing
+  \textbf{ROLLY AWANGGA, S.T., M.T.}
+  \vspace{10ex}
+
+  % Ubah kalimat berikut sesuai dengan nama fakultas
+  \textbf{D4 TEKNIK INFORMATIKA} \\
+  \textbf{POLITEKNIK POS INDONESIA} \\
+  % Ubah kalimat berikut sesuai dengan tempat dan tahun pembuatan buku
+  \textbf{Bandung 2021}
+
+\end{flushleft}
+
+\restoregeometry
