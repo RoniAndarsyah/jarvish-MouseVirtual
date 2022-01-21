@@ -93,13 +93,13 @@ while True:
         lenght = math.hypot(x0 - x1, y0 - y1)
         # print(lenght)
         # 9. menemukan jarak antara jari
-        if lenght < 20:
+        if lenght < 19:
             # jika jarak antar telunjuk dan jempol menekuk : clock kiri
             cv2.circle(img, (x2, y2), 15, (0, 255, 0), cv2.FILLED)
             mouse.click()
             # print(lenght)
          # jika jari tengan dan jari manis berdekatan maka : right click mode
-        if fingers[2] == 1 and fingers[3] == 1:
+        if fingers[1] == 1 and fingers[3] == 1:
             # menemkan jarak antar jari tengan dan jari manis
             lenght = math.hypot(x3-x4, y3-y4)
             # print(lenght)
@@ -108,17 +108,6 @@ while True:
                 cv2.circle(img, (x4, y4), 15, (0, 0, 255), cv2.FILLED)
                 mouse.right_click()
                 print(lenght)
-
-            if len(Hands) == 2:
-                hand2 = Hands[1]
-                tengah = hand2["lmList"]
-                xx2, yy2 = tengah[12][0], tengah[12][1]
-                lenght, info, img = detector.findDistance(
-                    (xx2, yy2), (x3, y3), img)
-                if lenght != 0:
-                    scale = int((lenght - xx2) // 2)
-                    print(scale)
-                    pyautogui.scroll(scale)
 
             # 11. frame Rate
     cTime = time.time()
