@@ -8,8 +8,8 @@ from cvzone.HandTrackingModule import HandDetector
 
 # set cam
 wCam, hCam = 640, 480
-frameR = 90
-smoothing = 4
+frameR = 150
+smoothing = 10
 
 pTime = 0
 plocX, plocY = 0, 0
@@ -93,7 +93,7 @@ while True:
         lenght = math.hypot(x0 - x1, y0 - y1)
         # print(lenght)
         # 9. menemukan jarak antara jari
-        if lenght < 19:
+        if lenght < 20:
             # jika jarak antar telunjuk dan jempol menekuk : clock kiri
             cv2.circle(img, (x2, y2), 15, (0, 255, 0), cv2.FILLED)
             mouse.click()
