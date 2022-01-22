@@ -72,7 +72,7 @@ while True:
         # print(x1, y1, x2, y2)
         # 3. cek apakah jari mengangkat
         print(fingers)
-        # 4. semua jari terangkat : Moving Mode
+        # 4. Jari manis dan jari kelingking menekuk : Moving Mode
         if fingers[3] == 0 and fingers[4] == 0:
             # 5. convert coordinate
             cv2.rectangle(img, (frameR, frameR),

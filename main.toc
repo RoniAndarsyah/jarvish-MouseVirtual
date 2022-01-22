@@ -3,8 +3,8 @@
 \contentsline {chapter}{DAFTAR ISI}{vii}{Doc-Start}%
 \contentsline {chapter}{DAFTAR GAMBAR}{ix}{chapter*.1}%
 \contentsline {chapter}{DAFTAR TABEL}{xi}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}VIRTUAL MOUSE USING HAND GESTURE PYTHON}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Virtual Mouse Hand Gesture}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {1}ARTIFICIAL INTELLIGINCE (AI)}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Revolusi Industri 4.0 dan Artificial Intelegence}{1}{section.1.1}%
 \contentsline {chapter}{\numberline {2}PENGENALAN BAHASA PEMOGRAMAN}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Sejarah PT. NASA}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Visi dan Misi}{6}{section.2.2}%
