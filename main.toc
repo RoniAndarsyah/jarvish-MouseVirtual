@@ -4,11 +4,12 @@
 \contentsline {chapter}{DAFTAR GAMBAR}{ix}{chapter*.1}%
 \contentsline {chapter}{DAFTAR TABEL}{xi}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}ARTIFICIAL INTELLIGINCE (AI)}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Revolusi Industri 4.0 dan Artificial Intelegence}{1}{section.1.1}%
-\contentsline {chapter}{\numberline {2}PENGENALAN BAHASA PEMOGRAMAN}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Sejarah PT. NASA}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Visi dan Misi}{6}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Struktur Organisasi}{6}{section.2.3}%
+\contentsline {section}{\numberline {1.1}Apa itu Artificial Intelligence}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Lalu bagaiana dengan perjalanan \textit {artificial intelligences} dalam pengembangan nya dan kapan \textit {artificial intelligences} ditemukan dan mulai dikembangkan}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}PENGENALAN BAHASA PEMOGRAMAN}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Sejarah PT. NASA}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Visi dan Misi}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Struktur Organisasi}{7}{section.2.3}%
 \contentsline {chapter}{\numberline {3}TINJAUAN PUSTAKA}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Roket Luar Angkasa}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Gravitasi}{9}{section.3.2}%
@@ -23,5 +24,5 @@
 \contentsline {chapter}{\numberline {6}KESIMPULAN DAN SARAN}{15}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Kesimpulan}{15}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Saran}{15}{section.6.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{17}{Item.30}%
-\contentsline {chapter}{BIOGRAFI PENULIS}{17}{Item.30}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{17}{Item.32}%
+\contentsline {chapter}{BIOGRAFI PENULIS}{17}{Item.32}%

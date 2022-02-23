@@ -8,7 +8,7 @@ from cvzone.HandTrackingModule import HandDetector
 
 # set cam
 wCam, hCam = 640, 480
-frameR = 150
+frameR = 100
 smoothing = 10
 
 pTime = 0
@@ -107,7 +107,7 @@ while True:
             if lenght < 30:
                 cv2.circle(img, (x4, y4), 15, (0, 0, 255), cv2.FILLED)
                 mouse.right_click()
-                print(lenght)
+                # print(lenght)
 
             # 11. frame Rate
     cTime = time.time()
