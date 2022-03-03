@@ -9,7 +9,7 @@ from cvzone.HandTrackingModule import HandDetector
 # set cam
 wCam, hCam = 640, 480
 frameR = 100
-smoothing = 10
+smoothing = 4
 
 pTime = 0
 plocX, plocY = 0, 0
@@ -71,8 +71,8 @@ while True:
         x4, y4 = lmList[16][0], lmList[16][1]
         # print(x1, y1, x2, y2)
         # 3. cek apakah jari mengangkat
-        print(fingers)
-        # 4. Jari manis dan jari kelingking menekuk : Moving Mode
+        # print(fingers)
+        # 4. semua jari terangkat : Moving Mode
         if fingers[3] == 0 and fingers[4] == 0:
             # 5. convert coordinate
             cv2.rectangle(img, (frameR, frameR),
@@ -89,9 +89,9 @@ while True:
 
             cv2.circle(img, (x3, y3), 15, (255, 0, 0), cv2.FILLED)
             plocX, plocY = clocX, clocY
-    # 8. menjalankan function : Click Mode
+
+        # 8. menjalankan function : Click Mode
         lenght = math.hypot(x0 - x1, y0 - y1)
-        # print(lenght)
         # 9. menemukan jarak antara jari
         if lenght < 20:
             # jika jarak antar telunjuk dan jempol menekuk : clock kiri
@@ -99,7 +99,7 @@ while True:
             mouse.click()
             # print(lenght)
          # jika jari tengan dan jari manis berdekatan maka : right click mode
-        if fingers[1] == 1 and fingers[3] == 1:
+        if fingers[2] == 1 and fingers[3] == 1:
             # menemkan jarak antar jari tengan dan jari manis
             lenght = math.hypot(x3-x4, y3-y4)
             # print(lenght)
@@ -109,7 +109,20 @@ while True:
                 mouse.right_click()
                 # print(lenght)
 
-            # 11. frame Rate
+            if len(Hands) == 2:
+                hand2 = Hands[1]
+                tengah = hand2["lmList"]
+                xx2, yy2 = tengah[12][0], tengah[12][1]
+                lenght, info, img = detector.findDistance(
+                    (xx2, yy2), (x3, y3), img)
+                if lenght != 0:
+                    scale = int((lenght - xx2) // 2)
+                    print(scale)
+                    pyautogui.scroll(scale)
+    else:
+        pass
+
+    # 11. frame Rate
     cTime = time.time()
     fps = 1/(cTime-pTime)
     pTime = cTime
